@@ -1,9 +1,9 @@
 # word_recommender
 
-word_recommeder.py is designed to recommend a word that should come after a word previously typed. My inspiration for this was how my keyboard will recommend three words for me for every word I type.
+word_recommeder.py recommends words after a previous word is typed. I was inspired by how my phone's keyboard recommends three words for every word I type. 
 
-The algorithm take all words in a file, and sees what is the most common words that comes after a word. It creates a hashmap of hashpmaps. The the outter hashmap will map a word to the word an frequency of all the words that come after that word. The inner hashmap contains the words and their frequencies that follow a certain word
+The algorithm takes all the words from a file, and finds the next logical word to recommend. It creates a hashmap of hashpmaps. The outer hashmap takes a word and maps it to the word and frequency of all recommendations. The inner hashmap contains the recommendations and their frequencies for following a certain word. 
 
-To run the algorithm just type in the text file or import your own text file(s) into the 'text' directory. In the code there is an option for the user to filter certain text files as the program will take a lot of time to finish executing for a large amount of words.
+To run the algorithm, just type in the text file or import your own text file(s) into the 'text' directory. In the code, there is an option for the user to filter certain text files since the program can take a large amount of time to finish executing for large word amounts.
 
-Since the hashmap of hashmaps takes a while to load, this would idealy be computed once and then you would just search for the word you are trying to find a recommendation for.
+Since the hashmap of hashmaps takes a while to load, this would ideally be computed once. Then you would just search for the word you are trying to find a recommendation for.
